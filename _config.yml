@@ -1,17 +1,17 @@
 # Jekyll configuration
 
-name: Blog Name
-description: Software Developer
+name: P1erre Mesnil | BI/Data Consultant
+description: The blog of P1erre Mesnil - BI/Data Consultant
 
 # Url is currently only used only for the RSS feed in feed.xml
-url: http://streetturtle.github.io
+url: https://www.p1erre.ml
 #url: http://localhost:4000
 
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
 baseurl: ''
 
-author: Pavel Makhov
-copyright: 2015-2018
+author: ''
+copyright: ''
 
 share:
   facebook: true
@@ -22,11 +22,11 @@ share:
   email: true
 
 social:
-  github: streetturtle
-  stackoverflow: ''
-  linkedin:
-  instagram: ''
-  lastfm: ''
+  github: pierml
+  stackoverflow:
+  linkedin: pierremesnil
+  instagram:
+  lastfm:
   rss: feed.xml
 
 # Google Analytics key, leave blank to ignore

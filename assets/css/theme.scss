@@ -17,12 +17,13 @@
 //********************************************************
 
 // Several accent colors, choose one or create your own!
-$accent-color: #3CA2A2;    // original =)
+//$accent-color: #3CA2A2;    // original =)
 //$accent-color: #C38FD6;  // velvet
 //$accent-color: #8FD6B3;  // greenish
 //$accent-color: #35B4DE;  // bluish
 //$accent-color: #D2E354;  // yellowish
 //$accent-color: #52B54B;  // green
+$accent-color: yellow;  // yellowish
 
 $font-color: #dddddd;
 $background-color: #292929;
@@ -44,7 +45,7 @@ body {
   background-color: $post-panel-color;
   box-shadow: 0 0 0 0, 0 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  padding: 20px;
+  padding: 0px 20px 0px 20px;
   font-size: 14px;
 }
 .main-page {
@@ -86,13 +87,13 @@ a {
 //********************************************************
 ul.social-media {
   text-align: center;
-  padding: 0 0 10px 0;
+  padding: 0 0 0 0;
   li {
     display: inline-block;
   }
   li > a {
     width: 45px;
-    height: 45px;
+    height: 0px;
     @include transition(color 0.2s);
     display: inline-block;
     color: white;
@@ -161,7 +162,7 @@ ul.share-buttons {
 //                    Sidebar
 //********************************************************
 .sidebar li {
-  margin-top: .7em;
+  margin-top: 1em;
   line-height: 1em;
 }
 ul.sideBarTags {
@@ -178,11 +179,14 @@ ul.sideBarTags {
 //                    Post
 //********************************************************
 h2.post-title {
-  padding-top: 10px;
+  border-width: 1px 0 1px 0;
+  border-color: #666666;
+  border-style: solid;
+  padding: 5px 0 5px 0;
   text-align: left;
 }
 div.post-meta {
-  border-width: 1px 0;
+  border-width: 0px 0 0 0;
   border-color: #666666;
   border-style: solid;
   margin: 0 0 20px;
@@ -267,7 +271,7 @@ nav {
     color: white !important;
   }
   .navbar-brand {
-    font-size: 30px;
+    //font-size: 30px;
     color: #777;
   }
   .navbar-nav {
@@ -277,7 +281,7 @@ nav {
     min-height: 15px !important;
   }
   .navbar-toggler {
-    margin: 13px 15px 13px 0;
+    //margin: 13px 15px 13px 0;
   }
   .shrink .navbar-toggler {
     padding: 4px 5px;
@@ -339,13 +343,15 @@ table.inner-borders {
 //********************************************************
 .footer {
   text-align: center;
+  margin: 0 0;
 }
+
 
 .footer-distributed {
   background-color: $footer-background-color;
   font: normal 16px sans-serif;
-  padding: 20px 25px;
-  margin-top: 80px;
+  padding: 10px 0px 0px 0px;
+  margin-top: 0px;
   text-align: center;
   bottom: 0;
   left: 0;
@@ -365,12 +371,13 @@ table.inner-borders {
 	margin:40px auto;
 }
 .wrapper{
-  padding-top: 80px;
+  padding-top: 60px;
   min-height: 100%;
   position: relative;
 }
 .content{
-  padding-bottom: 250px;
+  padding-bottom: 80px;
+  //padding-top: 15px;
 }
 
 .post-content h1,
@@ -447,10 +454,9 @@ table.inner-borders {
   }
   .footer-distributed .footer {
     float: none;
-    margin: 0 auto 20px;
+    margin: 0 auto 10px;
   }
   .footer-distributed .footer {
-    line-height: 1.8;
+    //line-height: 1.8;
   }
 }
-

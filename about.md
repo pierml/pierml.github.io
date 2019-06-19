@@ -1,8 +1,8 @@
 ---
-layout: page 
+layout: page
 title: About
 
 ---
 
-# Some info 
+# Hi! I'm P1erre
 ...about how cool you are ;)
