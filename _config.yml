@@ -10,8 +10,8 @@ url: https://www.p1erre.ml
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
 baseurl: ''
 
-author: ''
-copyright: ''
+author: 'P1erre Mesnil'
+copyright: '2019'
 
 share:
   facebook: true
@@ -23,14 +23,13 @@ share:
 
 social:
   github: pierml
-  stackoverflow:
   linkedin: pierremesnil
-  instagram:
-  lastfm:
   rss: feed.xml
+  twitter: pier_ml
+  mixcloud: DJM2P
 
 # Google Analytics key, leave blank to ignore
-google_analytics_key:
+google_analytics_key: UA-40320752-1
 # Yandex metrica (https://metrica.yandex.com/) leave blank to ignore or put true to use
 yandex_metrica:
 
