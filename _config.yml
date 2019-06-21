@@ -14,11 +14,11 @@ author: 'P1erre Mesnil'
 copyright: '2019'
 
 share:
-  facebook: true
+  facebook: false
   twitter: true
-  gplus: true
-  linkedin: true
-  pinterest: true
+  gplus: false
+  linkedin: false
+  pinterest: false
   email: true
 
 social:
@@ -37,7 +37,7 @@ yandex_metrica:
 # Set this to your disqus shortname to enable comments. Note that the 'comments'
 # setting below must also be true. Individual posts can override 'comments' to
 # disable on a post-by-post basis
-disqus: streetturtle
+disqus:
 comments: false
 
 permalink: /:year/:month/:title/
@@ -53,5 +53,3 @@ kramdown:
   hard_wrap: true
 
 exclude: ['README.md', 'LICENSE']
-
-theme: jekyll-theme-cayman

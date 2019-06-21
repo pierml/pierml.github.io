@@ -52,12 +52,12 @@ body {
   width: 75%;
 }
 
-h1 { font-size: 2em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.17em; }
-h4 { font-size: 1.12em; }
-h5 { font-size: .83em; }
-h6 { font-size: .75em; }
+h1 { font-size: 2.5em;font-weight: bold; }
+h2 { font-size: 2em;font-weight: bold; }
+h3 { font-size: 1.5em;font-weight: bold; }
+h4 { font-size: 1.17em;font-weight: bold; }
+h5 { font-size: 1.12em;font-weight: bold; }
+h6 { font-size: .83em;font-weight: bold; }
 
 img {
   display: inline-block;
@@ -184,6 +184,10 @@ h2.post-title {
   border-style: solid;
   padding: 5px 0 5px 0;
   text-align: left;
+}
+
+div.post-descr {
+  padding-top: 10px;
 }
 div.post-meta {
   border-width: 0px 0 0 0;
