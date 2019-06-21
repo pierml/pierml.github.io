@@ -53,7 +53,7 @@ body {
 }
 
 h1 { font-size: 2.5em;font-weight: bold; }
-h2 { font-size: 2em;font-weight: bold; }
+h2 { font-size: 2em;font-weight: bold; margin-bottom: 20px;}
 h3 { font-size: 1.5em;font-weight: bold; }
 h4 { font-size: 1.17em;font-weight: bold; }
 h5 { font-size: 1.12em;font-weight: bold; }
@@ -179,7 +179,7 @@ ul.sideBarTags {
 //                    Post
 //********************************************************
 h2.post-title {
-  border-width: 1px 0 1px 0;
+  border-width: 0 0 1px 0;
   border-color: #666666;
   border-style: solid;
   padding: 5px 0 5px 0;
@@ -187,7 +187,7 @@ h2.post-title {
 }
 
 div.post-descr {
-  padding-top: 10px;
+  padding-top: 30px;
 }
 div.post-meta {
   border-width: 0px 0 0 0;
@@ -308,6 +308,22 @@ nav.shrink {
 //                 Table
 //********************************************************
 
+// .offset-md-1 {
+//   margin-left: 0%;
+// }
+
+// .col-md-3 {
+//   flex: 0 0 20%;
+//   max-width: 20%;
+// }
+
+// .col-md-8 {
+//   flex: 0 0 100%;
+//   max-width: 100%;
+
+// .hidden-xs {
+//   margin-left: 0%;
+// }
 .post-content > table {
   background-color: #333333;
   margin: 0 auto 10px;

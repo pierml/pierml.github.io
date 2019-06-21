@@ -2,7 +2,11 @@
 layout: post
 title: Run Kali Linux on Windows 10
 date:   2019-06-20 18:00
-description: How to run Kali Linux on windows 10 using WSL
+description: |
+ How to run Kali Linux on windows 10 using WSL.
+ > 1. WSL Installation
+ > 2. Install Kali linux with the Windows Store
+ > 3. If you forgot your password
 tags: Kali
 image: assets/images/2019-20-06-run-kali-linux-under-windows.jpg
 ---
