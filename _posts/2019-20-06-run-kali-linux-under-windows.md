@@ -7,6 +7,10 @@ description: |
  > 1. WSL Installation
  > 2. Install Kali linux with the Windows Store
  > 3. If you forgot your password
+ > 4. GUI installation
+ > 5. How to change your xrdp port
+ > 6. Whitelist Kali in Windows Security
+ > 7. Install kali tools
 tags: Kali
 image: assets/images/2019-20-06-run-kali-linux-under-windows.jpg
 ---
@@ -32,7 +36,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 After doing this you need to reboot your computer.
 
 The currently version of WSL is 1.0 but Microsoft announce the version 2.0 with a better compatibility with the linux app for the end of the year.
-The 2.0 version can run docker for example. It's not possible currently with 1.0 version.
+The 2.0 version can run docker or nmap for example. It's not possible currently with 1.0 version.
 
 ## 2.Install Kali linux with the Windows Store
 
@@ -79,3 +83,76 @@ Finally change the default user to p1erre.
 kali config --default-user p1erre
 
 {% endhighlight %}
+
+## 4.GUI installation
+
+Many tutos on the net doesn't work to accomplish this. This is the right way to install gui for kali Linux in WSL.
+First, we need to update the source and the distribution. When you perform this, you can verify if your packets manager is configured to install the kali-rolling packages.
+
+>Bash
+{:.filename}
+{% highlight bash %}
+
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install xfce4
+sudo apt-get install xrdp
+
+{% endhighlight %}
+
+During this installation you need to configure your keyboard.
+After all of this is done, you have to launch the xrdp daemon and connect to it with the windows remote desktop app.
+
+>Bash
+{:.filename}
+{% highlight bash %}
+
+sudo /etc/init.d/xrdp start
+
+{% endhighlight %}
+
+![img]({{ 'assets/images/kali-linux-gui.jpg' | relative_url }}){: .center-image }*Kali linux GUI*
+
+## 5.How to change your xrdp port
+
+If your xrdp port is used yet, you can change it before launch the xrdp service.
+
+>Bash
+{:.filename}
+{% highlight bash %}
+
+sudo nano /etc/xrdp/xrdp.ini
+
+{% endhighlight %}
+
+Change the configuration line port to the desired port and restart the xrdp server.
+
+>Bash
+{:.filename}
+{% highlight bash %}
+
+sudo /etc/init.d/xrdp restart
+
+{% endhighlight %}
+
+## 6.Whitelist Kali in Windows Security
+
+Some utils of Kali are considerated by windows defender as malwares or hacktools. You need to whitelist the directory in the windows defender config.
+You need to find where this tools are installed.
+
+C:\Users\ `_username_` \AppData\Local\Packages\ `_Kali*_`
+
+![img]({{ 'assets/images/windows_security_exclusion.jpg' | relative_url }}){: .center-image }*Configure exclusion in windows security*
+
+## 7.Install kali tools
+
+>Bash
+{:.filename}
+{% highlight bash %}
+
+apt-cache search kali-linux
+
+{% endhighlight %}
+
+Install the required metapackage do you want for your usage.
+
+![img]({{ 'assets/images/kali_linux_metapackages.jpg' | relative_url }}){: .center-image }*List of Kali linux metapackages*
