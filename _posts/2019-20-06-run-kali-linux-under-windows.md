@@ -11,6 +11,7 @@ description: |
  > 5. How to change your xrdp port
  > 6. Whitelist Kali in Windows Security
  > 7. Install kali tools
+ > 8. How to access you windows or linux files
 tags: Kali
 image: assets/images/2019-20-06-run-kali-linux-under-windows.jpg
 ---
@@ -156,3 +157,22 @@ apt-cache search kali-linux
 Install the required metapackage do you want for your usage.
 
 ![img]({{ 'assets/images/kali_linux_metapackages.jpg' | relative_url }}){: .center-image }*List of Kali linux metapackages*
+
+## 8.How to access you windows or linux files
+
+From the linux bash, you can access your windows files from the link `/mnt/c` for the c drive and `/mnt/d` for your d drive and etc...
+
+Under windows you can access your linux file with this command :
+
+Launch `explorer.exe` in you bash.
+
+>Bash
+{:.filename}
+{% highlight bash %}
+
+explorer.exe
+
+{% endhighlight %}
+
+In your windows explorer run `\\wsl$`
+You can add this directory to your Quick access to run easily to this drive.
