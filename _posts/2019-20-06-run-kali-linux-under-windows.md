@@ -11,7 +11,7 @@ description: |
  > 5. How to change your xrdp port
  > 6. Whitelist Kali in Windows Security
  > 7. Install kali tools
- > 8. How to access you windows or linux files
+ > 8. How to access your windows or linux files
 tags: Kali
 image: assets/images/2019-20-06-run-kali-linux-under-windows.jpg
 ---
