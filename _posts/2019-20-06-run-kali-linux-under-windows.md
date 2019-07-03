@@ -158,7 +158,7 @@ Install the required metapackage do you want for your usage.
 
 ![img]({{ 'assets/images/kali_linux_metapackages.jpg' | relative_url }}){: .center-image }*List of Kali linux metapackages*
 
-## 8.How to access you windows or linux files
+## 8.How to access your windows or linux files
 
 From the linux bash, you can access your windows files from the link `/mnt/c` for the c drive and `/mnt/d` for your d drive and etc...
 
