@@ -6,9 +6,10 @@ description: |
  The different usage of Python in Power BI desktop.
  > 1. Install Python and prerequisite
  > 2. Import data in PowerBI Desktop with Python
- > 3. Fonctionnality of pandas library
+ > 3. Fonctionnality of pandas library for import
  > 4. Modify data in PowerBI Desktop with Python
- > 5. Visualize data with Python
+ > 5. Fonctionnality of pandas library for modify
+ > 6. Visualize data with Python
 tags: Python PowerBI
 image: assets/images/2019-02-07-python-usage-in-powerbi.jpg
 ---
@@ -55,11 +56,28 @@ stock = pandas.read_excel("C:\\Users\\P1erre\\Desktop\\stock.xlsx")
 {% endhighlight %}
 
 This script can import an excel in powerquery. Note, it is important to double the backslash for accessing to the file.
+PowerQuery detect automatically the pandas dataframe and name it with the variable name (stock in my example)
 
-## 3.Fonctionnality of pandas library
+## 3.Fonctionnality of pandas library for import
 
 With the pandas library you have a lot of connector. This is a quick list of what you can import :
 
 ![img]({{ 'assets/images/pandas-connectors.jpg' | relative_url }}){: .center-image }*Pandas connectors*
 
 ## 4.Modify data in PowerBI Desktop with Python
+
+It is possible to modify a dataset from powerquery in Python. The variable named dataset is used to access it.
+
+![img]({{ 'assets/images/run-python-script.jpg' | relative_url }}){: .center-image }*Run python script*
+
+>Python
+{:.filename}
+{% highlight python %}
+
+final = pandas.DataFrame(dataset.loc[:,'Date'])
+
+{% endhighlight %}
+
+This python script return only the date column of the dataset.
+
+## 5.Fonctionnality of pandas library for modify

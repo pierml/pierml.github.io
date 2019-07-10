@@ -46,15 +46,15 @@ body {
   box-shadow: 0 0 0 0, 0 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   padding: 0px 20px 0px 20px;
-  font-size: 14px;
+  font-size: 18px;
 }
 .main-page {
   width: 75%;
 }
 
 h1 { font-size: 2.5em;font-weight: bold; }
-h2 { font-size: 2em;font-weight: bold; margin-bottom: 20px;}
-h3 { font-size: 1.5em;font-weight: bold; }
+h2 { font-size: 1.8em;font-weight: bold; margin-bottom: 20px; color: $accent-color; text-decoration:underline;}
+h3 { font-size: 1.8em;font-weight: bold; }
 h4 { font-size: 1.17em;font-weight: bold; }
 h5 { font-size: 1.12em;font-weight: bold; }
 h6 { font-size: .83em;font-weight: bold; }
@@ -81,6 +81,11 @@ blockquote {
 a {
   color: $accent-color;
 }
+
+a:hover {
+  color: #3CA2A2;
+}
+
 
 //********************************************************
 //                    Social Links
@@ -126,6 +131,7 @@ ul.share-buttons {
     }
     a {
       text-decoration: none;
+
     }
     -webkit-transition: -webkit-transform .4s;
     -moz-transition: -moz-transform .4s;
