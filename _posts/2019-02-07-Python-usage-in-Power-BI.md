@@ -8,8 +8,7 @@ description: |
  > 2. Import data in PowerBI Desktop with Python
  > 3. Fonctionnality of pandas library for import
  > 4. Modify data in PowerBI Desktop with Python
- > 5. Fonctionnality of pandas library for modify
- > 6. Visualize data with Python
+
 tags: Python PowerBI
 image: assets/images/2019-02-07-python-usage-in-powerbi.jpg
 ---
@@ -79,5 +78,3 @@ final = pandas.DataFrame(dataset.loc[:,'Date'])
 {% endhighlight %}
 
 This python script return only the date column of the dataset.
-
-## 5.Fonctionnality of pandas library for modify
