@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure iptables on Debian 9
+title: Iptables on Debian 9
 date:   2019-10-15 17:30
 description: |
  How to configure iptables on Linux Debian 9.
@@ -14,14 +14,14 @@ image: assets\images\2019-15-10-Configure-IPTables-on-linux-Debian.jpg
 
 ## 1.Introduction
 
-IPTables is the software on all linux distribution to configure your firewall.
+Iptables is the software on all linux distribution to configure your firewall.
 You can check your IPV4 configuration with the command :
 
 >Bash
 {:.filename}
 {% highlight bash %}
 
-sudo iptables -L
+sudo iptables -L --line-numbers
 
 {% endhighlight %}
 
@@ -60,3 +60,13 @@ vim /etc/iptables/rules.v6
 {% endhighlight %}
 
 ## 4.Reload your configuration
+
+To reload your configuration just restart the netfilter-persistent service.
+
+>Bash
+{:.filename}
+{% highlight bash %}
+
+sudo service netfilter-persistent restart
+
+{% endhighlight %}
