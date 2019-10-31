@@ -4,7 +4,7 @@ title: About
 
 ---
 
-# Hi! I'm P1erre
+# Hi! I'm Pierre
 
 > I am a BI/Data consultant at the Finelog-Biseum company, in Paris. I was previously a project manager in Alten company and a technical consultant in Talentsoft company.
 >

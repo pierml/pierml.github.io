@@ -1,7 +1,7 @@
 # Jekyll configuration
 
-name: P1erre Mesnil | BI/Data Consultant
-description: The blog of P1erre Mesnil - BI/Data Consultant
+name: Pierre Mesnil | Data Engineer/BI Consultant
+description: The blog of Pierre Mesnil - Data Engineer/BI Consultant
 
 # Url is currently only used only for the RSS feed in feed.xml
 url: https://www.p1erre.ml
@@ -10,7 +10,7 @@ url: https://www.p1erre.ml
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
 baseurl: ''
 
-author: 'P1erre Mesnil'
+author: 'Pierre Mesnil'
 copyright: '2019'
 
 share:
