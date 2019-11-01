@@ -8,6 +8,7 @@ description: |
  > 2. To reload your config after a reboot
  > 3. Configure your rules
  > 4. Reload your configuration
+ > 5. Simple example of configuration
 tags: Debian iptables
 image: assets\images\2019-15-10-Configure-IPTables-on-linux-Debian.jpg
 ---
@@ -25,7 +26,7 @@ sudo iptables -L --line-numbers
 
 {% endhighlight %}
 
-![img]({{ 'assets/images/iptables00.png' | relative_url }}){: .center-image }*IPTables Rules*
+![IPTables Rules]({{ 'assets/images/iptables00.png' | relative_url }}){: .center-image }*IPTables Rules*
 
 In this situation we can see that all is permitted on this server.
 For IPV6 the command is ip6tables.
@@ -42,9 +43,9 @@ sudo apt-get install iptables-persistent
 
 {% endhighlight %}
 
-![img]({{ 'assets/images/iptables01.png' | relative_url }}){: .center-image }*Installation of iptables-persistent*
+![Installation of iptables-persistent]({{ 'assets/images/iptables01.png' | relative_url }}){: .center-image }*Installation of iptables-persistent*
 
-![img]({{ 'assets/images/iptables02.png' | relative_url }}){: .center-image }*Installation of iptables-persistent*
+![Installation of iptables-persistent]({{ 'assets/images/iptables02.png' | relative_url }}){: .center-image }*Installation of iptables-persistent*
 
 Answer yes for each question if you want to record your currently configuration.
 
@@ -68,5 +69,32 @@ To reload your configuration just restart the netfilter-persistent service.
 {% highlight bash %}
 
 sudo service netfilter-persistent restart
+
+{% endhighlight %}
+
+## 5.Simple example of configuration
+
+>Bash
+{:.filename}
+{% highlight bash %}
+
+#Firewall configuration
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+
+#Accept established traffic and from loopback interface
+-A INPUT -i lo -j ACCEPT
+-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+
+#Accept SSH
+-A INPUT --dport 22 -j ACCEPT
+
+#Block all
+-A INPUT -p tcp -j REJECT --reject-with tcp-reset
+-A INPUT -j REJECT --reject-with icmp-port-unreachable
+
+COMMIT
 
 {% endhighlight %}

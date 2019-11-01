@@ -32,7 +32,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 {% endhighlight %}
 
-![img]({{ 'assets/images/powershell-wsl-command.jpg' | relative_url }}){: .center-image }*Installation of WSL in powershell*
+![Installation of WSL in powershell]({{ 'assets/images/powershell-wsl-command.jpg' | relative_url }}){: .center-image }*Installation of WSL in powershell*
 
 After doing this you need to reboot your computer.
 
@@ -43,13 +43,13 @@ The 2.0 version can run docker or nmap for example. It's not possible currently 
 
 Just go to the windows store and search for kali linux.
 
-![img]({{ 'assets/images/get-kali-windows-store.jpg' | relative_url }}){: .center-image }*Kali linux in the windows store*
+![Kali linux in the windows store]({{ 'assets/images/get-kali-windows-store.jpg' | relative_url }}){: .center-image }*Kali linux in the windows store*
 
 Just click get and install it.
 
 At the first launch, kali invite you to create a new user.
 
-![img]({{ 'assets/images/kali-create-user.jpg' | relative_url }}){: .center-image }*First run in Kali linux*
+![First run in Kali linux]({{ 'assets/images/kali-create-user.jpg' | relative_url }}){: .center-image }*First run in Kali linux*
 
 You're now in Kali Linux !
 
@@ -111,7 +111,7 @@ sudo /etc/init.d/xrdp start
 
 {% endhighlight %}
 
-![img]({{ 'assets/images/kali-linux-gui.jpg' | relative_url }}){: .center-image }*Kali linux GUI*
+![Kali linux GUI]({{ 'assets/images/kali-linux-gui.jpg' | relative_url }}){: .center-image }*Kali linux GUI*
 
 ## 5.How to change your xrdp port
 
@@ -142,7 +142,7 @@ You need to find where this tools are installed.
 
 C:\Users\ `_username_` \AppData\Local\Packages\ `_Kali*_`
 
-![img]({{ 'assets/images/windows_security_exclusion.jpg' | relative_url }}){: .center-image }*Configure exclusion in windows security*
+![Configure exclusion in windows security]({{ 'assets/images/windows_security_exclusion.jpg' | relative_url }}){: .center-image }*Configure exclusion in windows security*
 
 ## 7.Install kali tools
 
@@ -156,7 +156,7 @@ apt-cache search kali-linux
 
 Install the required metapackage do you want for your usage.
 
-![img]({{ 'assets/images/kali_linux_metapackages.jpg' | relative_url }}){: .center-image }*List of Kali linux metapackages*
+![List of Kali linux metapackages]({{ 'assets/images/kali_linux_metapackages.jpg' | relative_url }}){: .center-image }*List of Kali linux metapackages*
 
 ## 8.How to access your windows or linux files
 
