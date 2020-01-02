@@ -1,7 +1,7 @@
 # Jekyll configuration
 
-name: Pierre Mesnil | Data Engineer | BI Consultant
-description: The blog of Pierre Mesnil - Data Engineer/BI Consultant
+name: Pierre Mesnil | Data Engineer
+description: The blog of Pierre Mesnil - Data Engineer
 
 # Url is currently only used only for the RSS feed in feed.xml
 url: https://www.p1erre.ml
