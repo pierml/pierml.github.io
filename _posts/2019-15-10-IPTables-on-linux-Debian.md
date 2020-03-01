@@ -9,8 +9,8 @@ description: |
  > 3. Configure your rules
  > 4. Reload your configuration
  > 5. Simple example of configuration
-tags: Debian iptables
-image: assets\images\2019-15-10-Configure-IPTables-on-linux-Debian.jpg
+tags: Debian
+image: assets/images/2019-15-10-Configure-IPTables-on-linux-Debian.jpg
 ---
 
 ## 1.Introduction

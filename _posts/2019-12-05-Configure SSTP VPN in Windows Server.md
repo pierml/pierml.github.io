@@ -10,8 +10,8 @@ description: |
  > 4. Configure RRAS
  > 5. Configure a Windows 10 desktop
  > 6. Some commands to debug
-tags: SSTP VPN Windows
-image: assets\images\2019-12-05-SSTP-VPN.jpg
+tags: Windows
+image: assets/images/2019-12-05-SSTP-VPN.jpg
 ---
 ## 1. Introduction
 

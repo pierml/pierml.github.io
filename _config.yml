@@ -26,7 +26,7 @@ social:
   linkedin: pierremesnil
   rss: feed.xml
   twitter: pier_ml
-  mixcloud: DJM2P
+  mixcloud:
 
 # Google Analytics key, leave blank to ignore
 google_analytics_key: UA-40320752-1
@@ -43,7 +43,10 @@ comments: false
 permalink: /:year/:month/:title/
 
 # Enable for using pages, more details are here: http://jekyllrb.com/docs/pagination/
-#paginate: 3
+plugins: [jekyll-paginate]
+
+paginate: 3
+paginate_path: /:num/
 
 #highlighter: rouge
 

@@ -12,7 +12,7 @@ description: |
  > 6. Whitelist Kali in Windows Security
  > 7. Install kali tools
  > 8. How to access your windows or linux files
-tags: Kali
+tags: WSL
 image: assets/images/2019-20-06-run-kali-linux-under-windows.jpg
 ---
 
