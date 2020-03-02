@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure SSTP VPN
+title: Configure an SSTP VPN
 date:   2019-12-05 16:00
 description: |
  How to configure an SSTP VPN on Windows Server 2016.
