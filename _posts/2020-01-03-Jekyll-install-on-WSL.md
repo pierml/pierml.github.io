@@ -12,13 +12,13 @@ tags: WSL
 image: assets/images/Jekyll-installation-on-WSL.jpg
 ---
 
-## 1.Jekyll introduction
+## 1. Jekyll introduction
 
 After a fresh installation of Windows, I needed to reinstall Jekyll in order to continue the development of my personal website. Jekyll is a popular framework written in ruby used to create a static pages website.
 
 ![Jekyll website]({{ 'assets/images/Jekyll-website.png' | relative_url }}){: .center-image }*Jekyll website*
 
-## 2.Installation of ruby
+## 2. Installation of ruby
 
 The first thing to do is to install ruby and some tools to compile different plug-in of Jekyll.
 
@@ -30,7 +30,7 @@ sudo apt-get install ruby-full build-essential zlib1g-dev
 
 {% endhighlight %}
 
-## 3.Installation of Jekyll
+## 3. Installation of Jekyll
 
 Once is done, we can install Jekyll with the gem command. After we launch the compilation of different tools.
 
@@ -43,7 +43,7 @@ bundle install
 
 {% endhighlight %}
 
-## 4.Use Jekyll
+## 4. Use Jekyll
 
 To use Jekyll, it's a good idea to install git, in order to work with github page which is free for hosting a static website.
 

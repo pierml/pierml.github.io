@@ -176,3 +176,6 @@ explorer.exe
 
 In your windows explorer run `\\wsl$`
 You can add this directory to your Quick access to run easily to this drive.
+
+Source:
+[https://docs.microsoft.com/en-us/windows/wsl/about](https://docs.microsoft.com/en-us/windows/wsl/about){:target="_blank"}

@@ -19,6 +19,8 @@
                     </ul>
                   </div>
                   <div class="post-content">
+                    <img class="center-image" src="{{ page.image | relative_url }}" alt="{{ page.title }}" title="{{ page.title }}">
+                    <br>
                     {% if page.toc %}
                       {% include toc.html html=content class='toc' %}
                     {% endif %}

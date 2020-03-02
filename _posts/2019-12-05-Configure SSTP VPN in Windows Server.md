@@ -139,3 +139,7 @@ netsh ras show sstp-ssl-cert
 netsh http show sslcert
 
 {% endhighlight %}
+
+Source:
+[https://github.com/PKISharp/win-acme](https://github.com/PKISharp/win-acme){:target="_blank"}
+[https://dailysysadmin.com/KB/Article/1934/create-an-sstp-vpn-server-in-windows-server-2016/](https://dailysysadmin.com/KB/Article/1934/create-an-sstp-vpn-server-in-windows-server-2016/){:target="_blank"}

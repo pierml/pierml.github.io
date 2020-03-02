@@ -83,3 +83,6 @@ This python script return only the date column of the dataset.
 ## 5.Conclusion
 
 It's a good thing that we can use python in powerbi. For me python is a swiss knive, you can access to functionnality we don't have natively in powerquery. However, warning, it's recommended to use the natively powerquery function first because it is more optimised for powerbi and obviously for performance reason.
+
+Source:
+[https://docs.microsoft.com/en-us/power-bi/desktop-python-scripts](https://docs.microsoft.com/en-us/power-bi/desktop-python-scripts){:target="_blank"}
