@@ -10,7 +10,7 @@ description: |
  > 4. Configure SSH passwordless
  > 5. Issue with Java 13
  > 6. Launch HDFS
-tags: Hadoop
+tags: [Data Science, Hadoop]
 image: assets/images/2020-11-03-Install-Apache-Hadoop-Debian.jpg
 ---
 

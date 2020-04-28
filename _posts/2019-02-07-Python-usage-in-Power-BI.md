@@ -10,7 +10,7 @@ description: |
  > 4. Modify data in PowerBI Desktop with Python
  > 5. Conclusion
 
-tags: Python PowerBI
+tags: [Data Science, PowerBI]
 image: assets/images/2019-02-07-python-usage-in-powerbi.jpg
 ---
 

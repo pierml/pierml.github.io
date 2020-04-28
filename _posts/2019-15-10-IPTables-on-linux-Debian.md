@@ -9,7 +9,7 @@ description: |
  > 3. Configure your rules
  > 4. Reload your configuration
  > 5. Simple example of configuration
-tags: Debian
+tags: [Network]
 image: assets/images/2019-15-10-Configure-IPTables-on-linux-Debian.jpg
 ---
 

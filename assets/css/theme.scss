@@ -16,45 +16,39 @@
 //                    Variables
 //********************************************************
 
-// Several accent colors, choose one or create your own!
-//$accent-color: #3CA2A2;    // original =)
-//$accent-color: #C38FD6;  // velvet
-//$accent-color: #8FD6B3;  // greenish
-//$accent-color: #35B4DE;  // bluish
-//$accent-color: #D2E354;  // yellowish
-//$accent-color: #52B54B;  // green
-$accent-color: yellow;  // yellowish
-
+$accent-color: yellow;
 $font-color: #dddddd;
 $background-color: #292929;
 $post-panel-color: #39393a;
-$footer-background-color: #292c2f;
+$footer-background-color: #222;
 $note-color: #87CEFA;
 $warning-color: #ffff00;
 // use this or pick any from /css/pics/background folder or from transparenttextures.com
-$background-pattern: 'random-grey-variations.png';
+$background-pattern: 'triangles.png';
 
 //********************************************************
 //                  Common styles
 //********************************************************
 body {
   color: $font-color;
+  background-color: rgb(40, 40, 40);
   background: $background-color url(pics/background/#{$background-pattern});
 }
 .card {
   background-color: $post-panel-color;
   box-shadow: 0 0 0 0, 0 8px 16px rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
+  border-radius: 0px;
   padding: 0px 20px 0px 20px;
   font-size: 18px;
+  border: 2px solid rgba(0,0,0,.125);
 }
 .main-page {
   width: 75%;
 }
 
-h1 { font-size: 2.2em;font-weight: 700; }
-h2 { font-size: 1.8em;font-weight: bold; margin-bottom: 20px; color: $accent-color; text-decoration:underline;}
-h3 { font-size: 1.8em;font-weight: bold; }
+h1 { font-size: 2.2em;font-weight: 700; color: $accent-color;}
+h2 { font-size: 1.6em;font-weight: bold; margin-bottom: 20px; color: $accent-color; text-decoration:underline;}
+h3 { font-size: 1.6em;font-weight: bold; color: rgb(165, 165, 165) !important; }
 h4 { font-size: 1.17em;font-weight: bold; }
 h5 { font-size: 1.12em;font-weight: bold; }
 h6 { font-size: .83em;font-weight: bold; }
@@ -86,10 +80,15 @@ blockquote {
 
 a {
   color: $accent-color;
+  @include transition(color 0.31s);
+  transition: all .2s ease;
 }
 
 a:hover {
-  color: #3CA2A2;
+  //color: #3CA2A2;
+  color: rgb(165, 165, 165) !important;
+  //color: white;
+  text-decoration: none;
 }
 
 
@@ -187,9 +186,17 @@ ul.sideBarTags {
 //********************************************************
 //                    Post
 //********************************************************
+h1.post-title {
+  border-width: 0 0 1px 0;
+  border-color: yellow;
+  border-style: solid;
+  padding: 5px 0 5px 0;
+  text-align: left;
+}
+
 h2.post-title {
   border-width: 0 0 1px 0;
-  border-color: #666666;
+  border-color: yellow;
   border-style: solid;
   padding: 5px 0 5px 0;
   text-align: left;
@@ -197,10 +204,13 @@ h2.post-title {
 
 div.post-descr {
   padding-top: 10px;
+  border-width: 0px 0px 0px 0px;
+  border-color: #666666;
+  border-style: solid;
 }
 
 div.post-meta {
-  border-width: 0px 0 0 0;
+  border-width: 0px 0px 0px 0px;
   border-color: #666666;
   border-style: solid;
   margin: 0 0 20px;
@@ -271,31 +281,30 @@ blockquote.warning p{
 nav {
   background-color: #222;
   border-color: #080808;
-  font-size: 18px;
+  font-size: 26px;
   font-family: "Ubuntu", sans-serif;
   padding: 0 10px !important;
-  border-top: 3px #3CA2A2 solid;
-  border-bottom: 1px #000000 solid;
-  .navbar-brand, .nav-link {
-   color: #777;
-   @include transition(color 0.31s);
-   transition: all .7s ease;
+  border-bottom: 2px yellow solid;
+  .nav-link {
+    @include transition(color 0.31s);
+    transition: all .2s ease;
+    color: rgb(165, 165, 165) !important;
+    font-weight: bold;
   }
-  .navbar-brand:hover, .nav-link:hover {
-    color: white !important;
+  .nav-link:hover {
+    color: yellow !important;
   }
   .navbar-brand {
-    //font-size: 30px;
-    color: #777;
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(165, 165, 165) !important;
+    font-weight: bold;
   }
   .navbar-nav {
-    margin-left: auto;
+    margin-right: auto;
   }
   .navbar.shrink {
     min-height: 15px !important;
-  }
-  .navbar-toggler {
-    //margin: 13px 15px 13px 0;
   }
   .shrink .navbar-toggler {
     padding: 4px 5px;
@@ -306,7 +315,7 @@ nav {
 nav.shrink {
   a {
     font-size: 15px;
-    padding: 0 10px !important;
+    padding: 0 0px !important;
   }
   .navbar-brand {
     font-size: 25px;
@@ -337,8 +346,8 @@ nav.shrink {
 .post-content > table {
   //background-color: #333333;
   margin: 0 auto 10px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  //border-top-left-radius: 5px;
+  //border-top-right-radius: 5px;
 
   tbody {
    // box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.5);
@@ -381,7 +390,7 @@ table.inner-borders {
   background-color: $footer-background-color;
   font: normal 16px sans-serif;
   padding: 10px 0px 0px 0px;
-  margin-top: 0px;
+  margin-top: 1px;
   text-align: center;
   bottom: 0;
   left: 0;
@@ -407,7 +416,7 @@ table.inner-borders {
 }
 .content{
   padding-bottom: 80px;
-  //padding-top: 15px;
+  padding-top: 5px;
 }
 
 .post-content h1,

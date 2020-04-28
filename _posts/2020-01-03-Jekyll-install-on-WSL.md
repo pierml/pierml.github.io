@@ -8,7 +8,7 @@ description: |
  > 2. Installation of ruby
  > 3. Installation of Jekyll
  > 4. Use Jekyll
-tags: WSL
+tags: [Web Development, Jekyll]
 image: assets/images/Jekyll-installation-on-WSL.jpg
 ---
 

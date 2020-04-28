@@ -1,11 +1,9 @@
 # Jekyll configuration
-
-name: Pierre Mesnil | Data Engineer
-description: The blog of Pierre Mesnil - Data Engineer
+name: [Pierre Mesnil's personal notes]
+description: Pierre Mesnil's personal notes
 
 # Url is currently only used only for the RSS feed in feed.xml
 url: https://www.p1erre.ml
-#url: http://localhost:4000
 
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
 baseurl: ''
@@ -29,10 +27,10 @@ social:
   mixcloud:
 
 # Google Analytics key, leave blank to ignore
-google_analytics_key: UA-40320752-1
+google_analytics_key:
+#UA-40320752-1
 # Yandex metrica (https://metrica.yandex.com/) leave blank to ignore or put true to use
 yandex_metrica:
-
 
 # Set this to your disqus shortname to enable comments. Note that the 'comments'
 # setting below must also be true. Individual posts can override 'comments' to

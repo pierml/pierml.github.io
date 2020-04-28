@@ -33,26 +33,10 @@
 
 {% include yandex-metrica.html %}
 
-<script type="text/javascript">
-    WebFontConfig = {
-        google: {
-            families: ['Ubuntu::latin']
-        }
-    };
-    (function () {
-        var wf = document.createElement('script');
-        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-    })();
-</script>
-
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+
     <div class="container">
-        <a class="navbar-brand" href="{{ '' | relative_url }}/">{{ site.name }}</a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -66,5 +50,6 @@
                 <a class="nav-item nav-link" href="{{ 'about' | relative_url }}">About</a>
             </div>
         </div>
+        <div class="navbar-brand">{{ site.name }}</div>
     </div>
 </nav>

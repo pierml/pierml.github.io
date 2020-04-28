@@ -10,7 +10,7 @@ description: |
  > 4. Configure RRAS
  > 5. Configure a Windows 10 desktop
  > 6. Some commands to debug
-tags: Windows
+tags: [Network]
 image: assets/images/2019-12-05-SSTP-VPN.jpg
 ---
 ## 1. Introduction
