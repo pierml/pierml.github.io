@@ -20,12 +20,18 @@
     <meta property="og:site_name" content="{{ site.name }}" >
     {% if page.title %}
     <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:image" content="{{ site.url }}{{ page.image | relative_url  }}">
     {% else %}
     <meta property="og:title" content="{{ site.name }}">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:description" content="I share on this website my experiences about information technology. All these notes are personal." />
+    <meta property="og:image" content="{{ site.url }}/assets/images/2020-11-03-Install-Apache-Hadoop-Debian.jpg">
     {% endif %}
-    {% if page.image %}
-    <meta property="og:image" content="{{ page.image | relative_url  }}">
-    {% endif %}
+
     {% include google-analytics.html %}
  </head>
 
