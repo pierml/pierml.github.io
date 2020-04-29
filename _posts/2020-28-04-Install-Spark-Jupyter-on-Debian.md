@@ -3,7 +3,7 @@ layout: post
 title: Install Spark and Jupyter on Debian 10
 date:   2020-04-28 16:00
 description: |
- Install Apache Spark and Jupyter Notebooks on Debian 10.
+ Install Apache Spark and Jupyter Notebooks on Debian 10 for a data science platform (part 2)
  > 1. Installation of Apache Spark
  > 2. Installation of Jupyter Notebooks
  > 3. Launch PySpark

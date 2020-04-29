@@ -3,7 +3,7 @@ layout: post
 title: Install Hadoop on Debian 10
 date:   2020-03-11 16:00
 description: |
- Install Hadoop HDFS on Debian 10.
+ Install Hadoop HDFS on Debian 10 for a data science platform (part 1)
  > 1. Installation of Java
  > 2. Installation of Hadoop
  > 3. Create a group and an hadoop user
