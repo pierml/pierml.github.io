@@ -1,9 +1,7 @@
 {% if site.tags != "" %}
 {% include collecttags.html %}
 {% endif %}
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>{{ site.name }}{% if page.title %} | {{ page.title }} {% endif %}</title>
@@ -17,24 +15,35 @@
     <link href="{{ '/assets/css/bootstrap4.min.css' | relative_url }}" rel="stylesheet">
     <link href="{{ '/assets/css/theme.css' | relative_url }}" rel="stylesheet">
     <link href="{{ '/assets/css/syntax.css' | relative_url }}" rel="stylesheet">
-    <meta property="og:site_name" content="{{ site.name }}" >
     {% if page.title %}
+    <meta property="og:site_name" content="{{ site.name }}" >
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     <meta property="og:description" content="{{ page.description }}" />
-    <meta property="og:image" content="{{ site.url }}{{ page.image | relative_url  }}">
+    <meta property="og:image" content="{{ site.url }}{{ page.image | relative_url }}">
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="twitter:title" content="{{ page.title }}" />
+    <meta property="twitter:image" content="{{ site.url }}{{ page.image | relative_url }}" />
+    <meta property="twitter:site" content="@pier_ml" />
+    <meta property="twitter:creator" content="@pier_ml" />
     {% else %}
+    <meta property="og:site_name" content="{{ site.name }}" >
     <meta property="og:title" content="{{ site.name }}">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ site.url }}" />
     <meta property="og:description" content="I share on this website my experiences about information technology. All these notes are personal." />
     <meta property="og:image" content="{{ site.url }}/assets/images/pierre-mesnil-s-notes.jpg">
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:url" content="{{ site.url }}" />
+    <meta property="twitter:title" content="{{ site.name }}" />
+    <meta property="twitter:image" content="{{ site.url }}/assets/images/pierre-mesnil-s-notes.jpg" />
+    <meta property="twitter:site" content="@pier_ml" />
+    <meta property="twitter:creator" content="@pier_ml" />
     {% endif %}
-
     {% include google-analytics.html %}
  </head>
-
 <body>
 
 {% include yandex-metrica.html %}
