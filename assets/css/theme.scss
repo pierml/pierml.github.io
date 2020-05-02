@@ -33,6 +33,7 @@ body {
   color: $font-color;
   background-color: rgb(40, 40, 40);
   background: $background-color url(pics/background/#{$background-pattern});
+  height: 100%;
 }
 .card {
   background-color: $post-panel-color;
@@ -188,7 +189,7 @@ ul.sideBarTags {
 //********************************************************
 h1.post-title {
   border-width: 0 0 1px 0;
-  border-color: yellow;
+  border-color: $accent-color;
   border-style: solid;
   padding: 5px 0 5px 0;
   text-align: left;
@@ -196,7 +197,7 @@ h1.post-title {
 
 h2.post-title {
   border-width: 0 0 1px 0;
-  border-color: yellow;
+  border-color: $accent-color;
   border-style: solid;
   padding: 5px 0 5px 0;
   text-align: left;
@@ -281,18 +282,20 @@ blockquote.warning p{
 nav {
   background-color: #222;
   border-color: #080808;
-  font-size: 26px;
+  font-size: 20px;
   font-family: "Ubuntu", sans-serif;
   padding: 0 10px !important;
-  border-bottom: 2px yellow solid;
+  border-bottom: 2px $accent-color solid;
   .nav-link {
     @include transition(color 0.31s);
     transition: all .2s ease;
     color: rgb(165, 165, 165) !important;
     font-weight: bold;
+    margin-left: 10px;
   }
+
   .nav-link:hover {
-    color: yellow !important;
+    color: $accent-color !important;
   }
   .navbar-brand {
     font-size: 30px;
@@ -310,6 +313,7 @@ nav {
     padding: 4px 5px;
     margin: 8px 15px 8px 0;
   }
+
 }
 
 nav.shrink {

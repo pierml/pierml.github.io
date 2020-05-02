@@ -92,6 +92,7 @@ spark-shell.sh
 update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 apt-get install python3-pip
 pip3 install notebook
+pip3 install findspark
 
 {% endhighlight %}
 
@@ -99,7 +100,7 @@ pip3 install notebook
 {:.filename}
 {% highlight bash %}
 
-jupyter notebook --ip=127.0.0.1
+jupyter notebook --ip=0.0.0.0
 
 {% endhighlight %}
 
@@ -123,6 +124,6 @@ pyspark
 
 Jupyter Notebooks : 8888
 HDFS : 9870
-Spark : 8580
+Spark : 7077
 yarn : 8088
 hdfs ipc : 9000
