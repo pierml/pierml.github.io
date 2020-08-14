@@ -8,10 +8,10 @@ title: About
 
 ![Pierre Mesnil]({{ 'assets/images/profil.jpg' | relative_url }}){: height: 100px }
 
->All along my career, I had a lot of position in IT domain. I start to work for an university as a system and network administrator. It's within this period that I was certified Cisco.
->Later, I pursued my career as a PHP developer for an e-commerce and after as .NET developer. I write a lot of software for private companies.
->Since many year, I am specialized in data. I'm currently data engineer, I like this job because it's between IT administration and software's development. The domain of data is very wide with big data technologies (Hadoop, MongoDb, Spark...) and classic BI (SQL server, MySQL, PowerBI...)
->My interests span data science, software development, new technologies and electronic music.
->I'm also based in Paris area and I'm come from Normandy
+>Throughout my career, I had a lot of positions in the IT domain. I started working for a university as a system and network administrator. During this period of time, I became certified in Cisco technologies.
+>Later, I pursued my career as a PHP developer for an e-commerce website and after as .NET developer. I wrote a lot of software for private companies.
+>For many years, I specialized in data. I’m currently a BI/Big Data consultant. I like this job because it combines software development and IT administration. The domain of data is very wide with big data technologies (Hadoop, MongoDb, Spark…) and classic BI (SQL server, PowerBI…)
+>My interests consists of data science, software development, new technologies and electronic music.
+>I'm also based in the Paris area and I come from Normandy.
 >
 >Feel free to contact me at [@Pier_ml](https://twitter.com/{{ site.social.twitter }}){:target="_blank"}.
