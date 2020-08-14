@@ -2,4 +2,4 @@ _cache
 _site
 .idea/
 .jekyll-cache/
-.ssas-cache/
+.sass-cache/
