@@ -63,3 +63,24 @@ virtualenv .venv
 ./.venv/Scripts/activate.ps1
 pip install -r requirements.txt
 {% endhighlight %}
+
+## 5.Create and remove a virtual environment in Jupyter Notebooks
+
+To create a virtual environment in Jupyter Notebooks, the method is different.
+This command create one and you can select it in the kernel menu of Jupyter Notebooks.
+
+>Powershell
+{:.filename}
+{% highlight powershell %}
+python -m ipykernel install --user --name=newEnvironment
+{% endhighlight %}
+
+You can delete a virtual environment with these commands too.
+The first one list all the environment and the second one delete one of them.
+
+>Powershell
+{:.filename}
+{% highlight powershell %}
+jupyter kernelspec list
+jupyter kernelspec uninstall newEnvironment
+{% endhighlight %}
