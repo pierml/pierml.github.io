@@ -1,6 +1,7 @@
 _cache
 _site
-.idea/
+.idea
 .jekyll-cache/
 .sass-cache/
 .jekyll-metadata
+workspace.code-workspace
