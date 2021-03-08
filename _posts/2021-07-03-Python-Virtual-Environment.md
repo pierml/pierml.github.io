@@ -34,7 +34,7 @@ The package pandas is installed in the .venv subdirectory and not in your genera
 >Powershell
 {:.filename}
 {% highlight powershell %}
-virtualenv .venv
+python -m venv .venv
 ./.venv/Scripts/activate.ps1
 pip install pandas
 deactivate
@@ -59,7 +59,7 @@ To recreate a virtual environment of a solution, you have just to type all this 
 >Powershell
 {:.filename}
 {% highlight powershell %}
-virtualenv .venv
+python -m venv .venv
 ./.venv/Scripts/activate.ps1
 pip install -r requirements.txt
 {% endhighlight %}
@@ -72,6 +72,9 @@ This command create one and you can select it in the kernel menu of Jupyter Note
 >Powershell
 {:.filename}
 {% highlight powershell %}
+python -m venv .venv
+./.venv/Scripts/activate.ps1
+pip install jupyter
 python -m ipykernel install --user --name=newEnvironment
 {% endhighlight %}
 
