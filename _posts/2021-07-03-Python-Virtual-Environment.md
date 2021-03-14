@@ -8,6 +8,7 @@ description: |
  > 2. Create a virtual environment on your project
  > 3. Generate requirement.txt
  > 4. Install a new environment from a requirement.txt file
+ > 5. Create and remove a virtual environment in Jupyter Notebooks
 tags: [Python]
 image: assets/images/2021-07-03-Python-Virtual-Environment.jpg
 ---
