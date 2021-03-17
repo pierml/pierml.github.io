@@ -5,6 +5,8 @@ date:   2021-03-16 12:00
 description: |
  About the Python virtual environment
  > 1. Create a context to your Azure environment
+ > 2. Start your containers with a Docker-Compose file
+ > 3. Delete your Azure context
 tags: [Azure,Docker]
 image: assets/images/2021-16-03-Send-Docker-Container-to-ACI.jpg
 ---
