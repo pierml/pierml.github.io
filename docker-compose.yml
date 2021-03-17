@@ -3,8 +3,9 @@ version: '3.4'
 services:
   jekyll:
     image: jekyll/jekyll:latest
-    command: jekyll serve --livereload --watch --force_polling --incremental
+    command: 
+      sh -c "bundle install && bundle exec jekyll serve --incremental --watch --force_polling --host 0.0.0.0"
     volumes:
       - .:/srv/jekyll
     ports:
-      - 40000:4000
+      - 4000:4000
