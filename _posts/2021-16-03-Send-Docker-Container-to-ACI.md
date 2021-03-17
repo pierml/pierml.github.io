@@ -48,6 +48,7 @@ You can delete your Azure context on your local machine with this command.
 >Powershell
 {:.filename}
 {% highlight powershell %}
+docker context use default
 docker context rm [my aci context]
 {% endhighlight %}
 
