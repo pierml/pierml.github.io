@@ -88,3 +88,6 @@ The first one list all the environment and the second one delete one of them.
 jupyter kernelspec list
 jupyter kernelspec uninstall newEnvironment
 {% endhighlight %}
+
+Source:
+[https://docs.python.org/fr/3/library/venv.html](https://docs.python.org/fr/3/library/venv.html){:target="_blank"}

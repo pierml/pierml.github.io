@@ -54,3 +54,6 @@ Alibaba provides a registrar service from the console to manage our purchased do
 ## 4. Conclusion
 
 In conclusion, the chinese cloud is very complete with a lot a functionnality for professional. All of these are easily accessible and the servers are speed. The navigation is also clear but we have quickly too much tabs open. The traduction is not very good too, so you have to use the english. The price are competitive and are approximatively the same than AWS or Azure.
+
+Source:
+[https://eu.alibabacloud.com](https://eu.alibabacloud.com){:target="_blank"}
